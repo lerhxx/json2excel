@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "json2excel",
+  "description": "Json to Excel",
+  "version": "0.0.1",
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_icon": "icon.png"
+  },
+  "background": {
+    "scripts": ["xlsx.full.min.js"],
+    "persistent": false
+  },
+  "content_scripts": [{
+    "matches": ["<all_urls>"],
+    "js": ["xlsx.full.min.js"],
+    "run_at": "document_end"
+  }],
+  "permissions": [
+    "activeTab",
+    "<all_urls>",
+    "bookmarks",
+    "contextMenus",
+    "downloads",
+    "tabs"
+  ]
+}

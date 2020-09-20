@@ -1,0 +1,8 @@
+{
+  "name": "json2excel",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:lerhxx/json2excel.git",
+  "author": "xuehuan <hxuehuan@gmail.com>",
+  "license": "MIT"
+}
